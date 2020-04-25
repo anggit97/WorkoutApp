@@ -1,3 +1,5 @@
+import Version.koinAndroid
+
 /**
  * Created by Anggit Prayogo on 4/25/20.
  */
@@ -45,6 +47,11 @@ object Version {
     const val gson = "2.8.6"
     const val okhttpLogging = "3.8.1"
     const val rxjavaAdapter = "1.0.0"
+
+    /**
+     * Koin
+     */
+    const val koinAndroid = "2.1.5"
 
     /**
      * Room
@@ -140,6 +147,10 @@ object Retrofit {
     const val rxAdapter = "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${Version.rxjavaAdapter}"
     const val okHttpLogging = "com.squareup.okhttp3:logging-interceptor:${Version.okhttpLogging}"
     const val coroutinesAdapter = "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:${Version.coroutinesAdapter}"
+}
+
+object Koin{
+    const val android = "org.koin:koin-android:$koinAndroid"
 }
 
 object Lifecycle {

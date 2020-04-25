@@ -1,0 +1,18 @@
+apply from: "$rootDir/common.gradle"
+
+android {
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies{
+    implementation AndroidSupport.appCompat
+
+    implementation Coroutines.core
+    implementation Coroutines.android
+    implementation Coroutines.test
+}

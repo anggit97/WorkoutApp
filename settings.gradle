@@ -1,2 +1,5 @@
 rootProject.name='Workout App'
-include ':app'
+
+include Modules.App
+
+include Modules.Abstraction

@@ -5,4 +5,4 @@ import androidx.fragment.app.Fragment
 /**
  * Created by Anggit Prayogo on 4/25/20.
  */
-class BaseFragment : Fragment()
+abstract class BaseFragment : Fragment()

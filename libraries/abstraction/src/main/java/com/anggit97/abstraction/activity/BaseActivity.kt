@@ -5,4 +5,4 @@ import androidx.appcompat.app.AppCompatActivity
 /**
  * Created by Anggit Prayogo on 4/25/20.
  */
-class BaseActivity : AppCompatActivity()
+abstract class BaseActivity : AppCompatActivity()

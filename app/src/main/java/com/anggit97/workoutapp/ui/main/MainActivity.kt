@@ -9,27 +9,19 @@ import com.anggit97.workoutapp.ui.workoutlist.WorkoutListFragment
 
 class MainActivity : BaseActivity() {
 
-    private var binding: ActivityMainBinding? = null
-
+    private lateinit var binding: ActivityMainBinding
     private lateinit var mainPagerAdapter: MainPagerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        if (binding != null){
-            e("DATA ", "Binding")
-        }else{
-            e("DATA ", "Binding Not")
-        }
-
         setupTab()
     }
 
     private fun setupTab() {
-        binding?.viewPager?.let { setupViewPager(it) }
-        binding?.tabMenu?.setupWithViewPager(binding?.viewPager)
+        setupViewPager(binding.viewPager)
+        binding.tabMenu.setupWithViewPager(binding.viewPager)
     }
 
     private fun setupViewPager(viewPager: ViewPager) {

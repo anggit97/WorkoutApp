@@ -4,7 +4,8 @@
     <style name="ChipTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@android:color/transparent</item>
         <item name="itemBackground">@drawable/selector_chip_tab</item>
-        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+        <item name="tabSelectedTextColor">@color/colorMediumPurple</item>
+        <item name="tabTextAppearance">@android:style/TextAppearance.Widget.TabWidget</item>
     </style>
 
 </resources>

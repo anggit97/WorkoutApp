@@ -6,4 +6,6 @@
 
     <color name="colorRhino">#25344C</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorMediumPurple">#906BDB</color>
+    <color name="colorPerfume">#dbcff9</color>
 </resources>

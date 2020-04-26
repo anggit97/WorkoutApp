@@ -1,5 +1,8 @@
 rootProject.name='Workout App'
 
+//app
 include Modules.App
 
-include Modules.Abstraction, Modules.Data
+//libraries
+include Modules.Abstraction
+include Modules.Data

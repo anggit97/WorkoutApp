@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+
+    <dimen name="margin_normal">@dimen/dimen_16</dimen>
+    <dimen name="icon_size_normal">@dimen/dimen_24</dimen>
+
+
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+
+    <dimen name="font_header">@dimen/font_size_24</dimen>
+</resources>

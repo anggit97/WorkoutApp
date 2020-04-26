@@ -4,11 +4,15 @@
     <dimen name="dimen_24">24dp</dimen>
 
     <dimen name="margin_normal">@dimen/dimen_16</dimen>
+    <dimen name="margin_top">@dimen/dimen_16</dimen>
     <dimen name="icon_size_normal">@dimen/dimen_24</dimen>
 
 
     <dimen name="font_size_18">18sp</dimen>
     <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size_30">30sp</dimen>
+    <dimen name="font_size_36">36sp</dimen>
 
-    <dimen name="font_header">@dimen/font_size_24</dimen>
+    <dimen name="font_header">@dimen/font_size_30</dimen>
+    <dimen name="dimen_10">10dp</dimen>
 </resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Workout App</string>
+    <string name="report">Laporan</string>
+    <string name="drawer_menu">drawer menu</string>
+    <string name="choose_your_workout">Pilih Workout Kamu</string>
+</resources>

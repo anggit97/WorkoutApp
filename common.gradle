@@ -16,7 +16,7 @@ android {
         multiDexEnabled = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    dataBinding{
+    viewBinding {
         enabled = true
     }
 }

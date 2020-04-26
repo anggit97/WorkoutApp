@@ -66,7 +66,8 @@ object Version {
     /**
      * chrisjenx
      */
-    const val calligraphy = "2.3.0"
+    const val calligraphy = "3.1.1"
+    const val viewbump = "2.0.3"
 
     /**
      * Karumi
@@ -167,7 +168,8 @@ object Airbnb {
 }
 
 object Font {
-    const val calligraphy = "uk.co.chrisjenx:calligraphy:${Version.calligraphy}"
+    const val calligraphy = "io.github.inflationx:calligraphy3:${Version.calligraphy}"
+    const val viewBump = "io.github.inflationx:viewpump:${Version.viewbump}"
 }
 
 object Karumi {

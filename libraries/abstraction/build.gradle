@@ -12,6 +12,9 @@ android {
 dependencies{
     implementation AndroidSupport.appCompat
 
+    implementation Font.calligraphy
+    implementation Font.viewBump
+
     implementation Coroutines.core
     implementation Coroutines.android
     implementation Coroutines.test

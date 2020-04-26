@@ -3,8 +3,8 @@
  */
 object Modules {
     //Abstraction
-    const val Abstraction = "libraries:abstraction"
-    const val Data = "libraries:data"
+    const val Abstraction = ":libraries:abstraction"
+    const val Data = ":libraries:data"
 
     //features
 

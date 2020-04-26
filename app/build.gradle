@@ -23,6 +23,14 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    viewBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -34,7 +42,13 @@ dependencies {
     implementation AndroidSupport.constraintLayout
     implementation AndroidSupport.coreKtx
 
+    implementation Font.calligraphy
+    implementation Font.viewBump
+
     testImplementation Testing.junit
     androidTestImplementation Testing.junitExt
     androidTestImplementation Testing.espressoCore
+
+    implementation project(Modules.Abstraction)
+    implementation project(Modules.Data)
 }

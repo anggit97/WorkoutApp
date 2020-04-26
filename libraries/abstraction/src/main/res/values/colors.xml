@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#25344C</color>
+    <color name="colorPrimaryDark">#25344C</color>
+    <color name="colorAccent">#FFFFFF</color>
+
     <color name="colorRhino">#25344C</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorMediumPurple">#906BDB</color>
+    <color name="colorPerfume">#dbcff9</color>
 </resources>

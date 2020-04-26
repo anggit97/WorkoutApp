@@ -2,5 +2,4 @@ rootProject.name='Workout App'
 
 include Modules.App
 
-include Modules.Abstraction
-include ':libraries:data'
+include Modules.Abstraction, Modules.Data

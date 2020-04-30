@@ -2,6 +2,13 @@
 <resources>
     <dimen name="dimen_16">16dp</dimen>
     <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_200">200dp</dimen>
+    <dimen name="dimen_300">300dp</dimen>
+    <dimen name="dimen_400">400dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
 
     <dimen name="margin_normal">@dimen/dimen_16</dimen>
     <dimen name="margin_top">@dimen/dimen_16</dimen>

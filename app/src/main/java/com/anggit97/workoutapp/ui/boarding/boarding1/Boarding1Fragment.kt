@@ -20,5 +20,4 @@ class Boarding1Fragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_boarding1, container, false)
     }
-
 }

@@ -111,6 +111,12 @@ object Version {
     const val leakCannaryVersion = "2.2"
 
     /**
+     * Glide
+     */
+    const val glide = "4.11.0"
+    const val glideCompiler = "4.11.0"
+
+    /**
      * Test
      */
     const val junit = "4.13"
@@ -193,6 +199,11 @@ object LeakCannary{
 object Room{
     const val room = "androidx.room:room-runtime:${Version.room}"
     const val roomCompiler = "androidx.room:room-compiler:${Version.room}"
+}
+
+object Glide{
+    const val glide = "com.github.bumptech.glide:glide:${Version.glide}"
+    const val glideCompiler = "com.github.bumptech.glide:compiler:${Version.glideCompiler}"
 }
 
 object Testing {

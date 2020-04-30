@@ -8,4 +8,11 @@
         <item name="tabTextAppearance">@android:style/TextAppearance.Widget.TabWidget</item>
     </style>
 
+    <style name="IndicatorBullet">
+        <item name="android:layout_width">@dimen/dimen_16</item>
+        <item name="android:layout_height">@dimen/dimen_16</item>
+        <item name="android:layout_marginStart">@dimen/dimen_5</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_5</item>
+    </style>
+
 </resources>

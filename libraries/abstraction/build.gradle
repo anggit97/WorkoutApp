@@ -17,6 +17,9 @@ dependencies{
     implementation Font.calligraphy
     implementation Font.viewBump
 
+    implementation Glide.glide
+    kapt Glide.glideCompiler
+
     implementation Coroutines.core
     implementation Coroutines.android
     implementation Coroutines.test

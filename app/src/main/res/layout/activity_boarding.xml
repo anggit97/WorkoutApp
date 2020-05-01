@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     tools:context=".ui.boarding.BoardingActivity">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/dimen_80" />
+        android:layout_marginBottom="@dimen/dimen_100" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="@dimen/dimen_80"
+        android:layout_marginBottom="@dimen/dimen_100"
         android:background="@color/colorPerfume" />
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_100"
         android:layout_gravity="bottom"
         android:paddingStart="@dimen/dimen_16"
         android:paddingTop="@dimen/dimen_10"
@@ -28,17 +30,21 @@
         android:paddingBottom="@dimen/dimen_10">
 
         <LinearLayout
+            android:id="@+id/llIndicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/dimen_16"
             android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/intro_indicator_0"
                 style="@style/IndicatorBullet"
-                android:background="@drawable/indicator_unselected"
+                android:background="@drawable/indicator_selected"
                 android:contentDescription="@string/app_name" />
 
             <ImageView
@@ -55,15 +61,36 @@
 
         </LinearLayout>
 
+
+        <TextView
+            android:id="@+id/tvStartWorkout"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/start_workout"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnNext"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/llIndicator"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/dimen_10"
             android:backgroundTint="@color/colorPrimary"
-            android:src="@drawable/shoes"
+            android:src="@drawable/ic_arrow_forward_white_24dp"
+            app:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@color/colorPerfume"
             tools:ignore="UnusedAttribute" />
 
-    </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

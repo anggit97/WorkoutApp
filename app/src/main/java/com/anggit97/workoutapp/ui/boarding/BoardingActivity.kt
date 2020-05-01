@@ -40,6 +40,14 @@ class BoardingActivity : BaseActivity() {
         indicatorClickListener()
 
         btnNextClickListener()
+
+        skipOnClickListener()
+    }
+
+    private fun skipOnClickListener() {
+        binding.tvSkip.setOnClickListener {
+            startActivity(intentFor<MainActivity>().clearTask().newTask())
+        }
     }
 
     private fun btnNextClickListener() {

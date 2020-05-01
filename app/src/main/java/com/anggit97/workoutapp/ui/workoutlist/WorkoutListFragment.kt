@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -54,7 +55,7 @@ class WorkoutListFragment : BaseFragment() {
     private fun initRecyclerview() {
         adapter = WorkoutAreaListAdapter()
         rvWorkoutArea.layoutManager =
-            GridLayoutManager(requireActivity(), 2, LinearLayoutManager.VERTICAL, false)
+            GridLayoutManager(requireActivity(), 2)
         rvWorkoutArea.adapter = adapter
     }
 

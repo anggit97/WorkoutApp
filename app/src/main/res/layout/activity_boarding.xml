@@ -20,7 +20,7 @@
         android:layout_marginBottom="@dimen/dimen_100"
         android:background="@color/colorPerfume" />
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_100"
         android:layout_gravity="bottom"
@@ -30,12 +30,16 @@
         android:paddingBottom="@dimen/dimen_10">
 
         <LinearLayout
+            android:id="@+id/llIndicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/dimen_16"
             android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/intro_indicator_0"
@@ -57,6 +61,21 @@
 
         </LinearLayout>
 
+
+        <TextView
+            android:id="@+id/tvStartWorkout"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/start_workout"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnNext"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/llIndicator"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnNext"
             android:layout_width="wrap_content"
@@ -66,9 +85,12 @@
             android:backgroundTint="@color/colorPrimary"
             android:src="@drawable/ic_arrow_forward_white_24dp"
             app:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:rippleColor="@color/colorPerfume"
             tools:ignore="UnusedAttribute" />
 
-    </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

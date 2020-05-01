@@ -91,6 +91,11 @@ object Version {
     const val coroutinesAdapter = "0.9.2"
 
     /**
+     * Anko
+     */
+    const val ankoCommonVersion = "0.10.8"
+
+    /**
      * Deeplink
      */
     const val deeplink = "4.1.0"
@@ -190,6 +195,10 @@ object Coroutines {
     const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.coroutines}"
     const val android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Version.coroutines}"
     const val test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Version.coroutines}"
+}
+
+object Anko{
+    const val common = "org.jetbrains.anko:anko-commons:${Version.ankoCommonVersion}"
 }
 
 object LeakCannary{

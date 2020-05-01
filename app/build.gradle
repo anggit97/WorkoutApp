@@ -49,6 +49,8 @@ dependencies {
     implementation Glide.glide
     kapt Glide.glideCompiler
 
+    implementation Anko.common
+
     testImplementation Testing.junit
     androidTestImplementation Testing.junitExt
     androidTestImplementation Testing.espressoCore

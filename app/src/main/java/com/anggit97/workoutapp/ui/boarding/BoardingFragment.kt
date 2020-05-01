@@ -38,7 +38,9 @@ class BoardingFragment : BaseFragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentBoardingBinding.inflate(inflater, container, false)
-        return binding.root
+        val view = binding.root
+        view.tag = positionArgs
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

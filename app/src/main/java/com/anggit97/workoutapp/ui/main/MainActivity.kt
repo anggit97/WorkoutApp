@@ -1,11 +1,10 @@
 package com.anggit97.workoutapp.ui.main
 
 import android.os.Bundle
-import android.util.Log.e
 import androidx.viewpager.widget.ViewPager
 import com.anggit97.abstraction.activity.BaseActivity
 import com.anggit97.workoutapp.databinding.ActivityMainBinding
-import com.anggit97.workoutapp.ui.workoutlist.WorkoutListFragment
+import com.anggit97.workoutapp.ui.workoutarealist.WorkoutAreaListFragment
 
 class MainActivity : BaseActivity() {
 
@@ -26,9 +25,9 @@ class MainActivity : BaseActivity() {
 
     private fun setupViewPager(viewPager: ViewPager) {
         mainPagerAdapter = MainPagerAdapter(supportFragmentManager)
-        mainPagerAdapter.addFragment(WorkoutListFragment(), "Workout")
-        mainPagerAdapter.addFragment(WorkoutListFragment(), "Report")
-        mainPagerAdapter.addFragment(WorkoutListFragment(), "Activity")
+        mainPagerAdapter.addFragment(WorkoutAreaListFragment(), "Workout")
+        mainPagerAdapter.addFragment(WorkoutAreaListFragment(), "Report")
+        mainPagerAdapter.addFragment(WorkoutAreaListFragment(), "Activity")
         viewPager.adapter = mainPagerAdapter
         viewPager.offscreenPageLimit = 3
     }

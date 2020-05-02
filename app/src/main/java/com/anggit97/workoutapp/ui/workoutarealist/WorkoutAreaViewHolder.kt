@@ -1,4 +1,4 @@
-package com.anggit97.workoutapp.ui.workoutlist
+package com.anggit97.workoutapp.ui.workoutarealist
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

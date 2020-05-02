@@ -1,4 +1,4 @@
-package com.anggit97.workoutapp.ui.workoutlist
+package com.anggit97.workoutapp.ui.workoutarealist
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

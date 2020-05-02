@@ -11,4 +11,5 @@
     <string name="today_workout">Workout Hari Ini</string>
     <string name="ex_workout_name">V-Sit</string>
     <string name="ex_workout_count">20 kali</string>
+    <string name="ex_image_gif">https://gifimage.net/wp-content/uploads/2017/08/workout-gif.gif</string>
 </resources>

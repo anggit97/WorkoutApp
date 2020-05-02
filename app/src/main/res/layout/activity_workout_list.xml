@@ -91,6 +91,7 @@
         app:cardElevation="@dimen/dimen_3">
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvWorkout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/dimen_16"

@@ -17,3 +17,10 @@ fun ImageView.showImage(drawable: Int) {
         .load(drawable)
         .into(this)
 }
+
+fun ImageView.showGifImage(url: Int){
+    Glide.with(context.applicationContext)
+        .asGif()
+        .load(url)
+        .into(this)
+}

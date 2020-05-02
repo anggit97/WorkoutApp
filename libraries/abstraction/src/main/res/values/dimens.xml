@@ -23,4 +23,7 @@
     <dimen name="font_header">@dimen/font_size_30</dimen>
     <dimen name="dimen_10">10dp</dimen>
     <dimen name="dimen_7">7dp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
 </resources>

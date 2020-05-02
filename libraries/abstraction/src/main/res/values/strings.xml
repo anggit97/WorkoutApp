@@ -8,4 +8,7 @@
     <string name="routine_sport_subheader">keterangan (bahasa Inggris: adjunct) adalah kata atau kelompok kata yang dipakai untuk meluaskan atau membatasi makna subjek atau predikat dalam kalimat. Keterangan merupakan fungsi sintaksis yang paling beragam dan paling mudah berpindah letak dalam kalimat.</string>
     <string name="skip">Lewati >></string>
     <string name="ex_workout_area">Arms</string>
+    <string name="today_workout">Workout Hari Ini</string>
+    <string name="ex_workout_name">V-Sit</string>
+    <string name="ex_workout_count">20 kali</string>
 </resources>

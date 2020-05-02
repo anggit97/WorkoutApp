@@ -1,25 +1,23 @@
-package com.anggit97.workoutapp.ui.workoutlist
+package com.anggit97.workoutapp.ui.workoutarealist
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.anggit97.abstraction.fragment.BaseFragment
 import com.anggit97.data.entity.workoutarea.WorkoutArea
 import com.anggit97.workoutapp.R
-import com.anggit97.workoutapp.databinding.FragmentWorkoutListBinding
-import kotlinx.android.synthetic.main.fragment_workout_list.*
+import com.anggit97.workoutapp.databinding.FragmentWorkoutAreaListBinding
+import kotlinx.android.synthetic.main.fragment_workout_area_list.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class WorkoutListFragment : BaseFragment() {
+class WorkoutAreaListFragment : BaseFragment() {
 
-    private var _binding: FragmentWorkoutListBinding? = null
+    private var _binding: FragmentWorkoutAreaListBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var adapter: WorkoutAreaListAdapter
@@ -29,7 +27,7 @@ class WorkoutListFragment : BaseFragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentWorkoutListBinding.inflate(inflater, container, false)
+        _binding = FragmentWorkoutAreaListBinding.inflate(inflater, container, false)
         return binding.root
     }
 

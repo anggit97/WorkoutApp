@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.anggit97.abstraction.util.ext.showGifImage
+import com.anggit97.abstraction.util.ext.showImage
 import com.anggit97.data.entity.workout.Workout
 import com.anggit97.workoutapp.R
 import kotlinx.android.synthetic.main.row_item_workout.view.*
@@ -25,8 +25,8 @@ class WorkoutListAdapter: RecyclerView.Adapter<WorkoutListAdapter.ViewHolder>() 
         fun bindView(workout: Workout) {
             with(itemView){
                 tvWorkoutName.text = workout.name
-                tvWorkoutCapacity.text = workout.duration
-                ivWorkout.showGifImage(workout.image)
+                tvWorkoutCapacity.text = workout.duration.plus(" Kali")
+                ivWorkout.showImage(workout.image)
             }
         }
     }

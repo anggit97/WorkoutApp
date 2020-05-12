@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTodayScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:text="@string/label_today_score"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_size_16"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/cvTodayScore"
+                app:layout_constraintStart_toStartOf="@id/cvTodayScore"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTodayScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_36"
+                android:layout_marginTop="@dimen/dimen_10"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTodayScore">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.core.widget.ContentLoadingProgressBar
+                        android:id="@+id/pbTodayScore"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="@dimen/dimen_150"
+                        android:layout_height="@dimen/dimen_100"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/circular"
+                        android:secondaryProgress="100"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPercentTodayScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_24"
+                        android:text="@string/label_50_persen"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/font_size_24"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/pbTodayScore" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvThisWeekScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_this_week_score"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_size_16"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/cvThisWeekScore"
+                app:layout_constraintStart_toStartOf="@id/cvThisWeekScore"
+                app:layout_constraintTop_toTopOf="@id/tvTodayScore" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvThisWeekScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginEnd="@dimen/dimen_36"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTodayScore">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.core.widget.ContentLoadingProgressBar
+                        android:id="@+id/pbThisWeekScore"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="@dimen/dimen_150"
+                        android:layout_height="@dimen/dimen_100"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="70"
+                        android:progressDrawable="@drawable/circular"
+                        android:secondaryProgress="100"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPercentThisWeekScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_24"
+                        android:text="@string/label_70_persen"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/font_size_24"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/pbThisWeekScore" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvWorkoutDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_36"
+                android:text="@string/label_list_activities"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_size_16"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/cvWorkoutDone"
+                app:layout_constraintStart_toStartOf="@id/cvTodayScore"
+                app:layout_constraintTop_toBottomOf="@id/cvTodayScore" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvWorkoutDone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_36"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_3"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/cvThisWeekScore"
+                app:layout_constraintStart_toStartOf="@id/cvTodayScore"
+                app:layout_constraintTop_toBottomOf="@id/tvWorkoutDone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvWorkoutDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:layout_marginBottom="@dimen/dimen_36"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/row_item_workout" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
